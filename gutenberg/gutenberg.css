@@ -19,14 +19,12 @@ body {
     padding: 2em;
     border: 3px dotted var(--bg-blonde);
     text-align: center;
-    /* font-family: Georgia, "Times New Roman", Times, serif; */
-    font-family: "Brush Script MT", cursive;
+    font-family: Garamond, "Times New Roman", Times, serif;
 
 }
 
 h1, h2, h3, h4 {
-    /* font-family: 'Lucida Handwritting', 'Brush Script M7', Papyrus, cursive; */
-    font-family: "Brush Script MT", cursive;
+    font-family: 'Lucida Handwritting', 'Brush Script M7', Papyrus, cursive;
 }
 
 .c1, .c2, .c2, .c3, .c4, .c5, .c6 {
@@ -35,22 +33,27 @@ h1, h2, h3, h4 {
 
 pre {
     text-align: center;
-    /* font-family: Georgia, "Times New Roman", Times, serif; */
 }
 
 p {
     text-align: left;
     text-indent: 1em;
     padding: 1px;
-    margin-top: 1em;
-    margin-bottom: 1em;
+    /* margin-top: 1em;
+    margin-bottom: 1em; */
+    font-size: large;
+    margin: 1.5em;
 }
 
-p.letter, p.poem, .poem {
+p.letter, p.poem, .stanza, .poem {
     border: 3px solid var(--bg-grey);
     padding: 10%;
     margin: 10%;
     background-color: var(--bg-blonde);
+    text-indent: 0;
+    font-size: x-large;
+    font-family: 'Brush Script M7', Papyrus, cursive;
+    text-indent: 0;
 }
 
 .pginternal, .c3 tbody {
@@ -70,7 +73,7 @@ p.letter, p.poem, .poem {
 p a {
     display: flex;
     justify-content: center;
-    padding-top: 2em;
+    padding: 1em 0;
 }
 
 img.c1, img {
