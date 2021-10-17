@@ -1,7 +1,8 @@
 :root {
     --bg-old: #f2eecb;
     --bg-darker: #f7f2c6;
-    --bg-blonde: #f6eaab;
+    --bg-blond: #f6eaab;
+    --bg-darker-blond: #faefa0;
     --bg-grey: #787879;
 }
 
@@ -17,14 +18,18 @@ body {
     margin-top: 5%;
     margin-bottom: 5%;
     padding: 2em;
-    border: 3px dotted var(--bg-blonde);
     text-align: center;
     font-family: Garamond, "Times New Roman", Times, serif;
-
+    box-shadow: 10px 10px 8px 8px var(--bg-grey), 
+                inset 18px 18px 30px 10px var(--bg-blond),
+                inset -18px -18px 30px 10px var(--bg-blond);
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bolder;
     font-family: 'Lucida Handwritting', 'Brush Script M7', Papyrus, cursive;
+    color: #000;
+    text-shadow: slategrey 2px 0 5px;
 }
 
 .c1, .c2, .c2, .c3, .c4, .c5, .c6 {
@@ -38,22 +43,20 @@ pre {
 p {
     text-align: left;
     text-indent: 1em;
-    padding: 1px;
-    /* margin-top: 1em;
-    margin-bottom: 1em; */
-    font-size: large;
+    font-size: larger;
     margin: 1.5em;
 }
 
 p.letter, p.poem, .stanza, .poem {
-    border: 3px solid var(--bg-grey);
-    padding: 10%;
-    margin: 10%;
-    background-color: var(--bg-blonde);
+    /* border: 3px solid var(--bg-grey); */
+    padding: 3% 10%;
+    margin: 7% 10%;
+    background-color: var(--bg-darker-blond);
     text-indent: 0;
     font-size: x-large;
     font-family: 'Brush Script M7', Papyrus, cursive;
     text-indent: 0;
+    box-shadow: 1px 0 25px 25px var(--bg-darker-blond);
 }
 
 .pginternal, .c3 tbody {
@@ -77,6 +80,6 @@ p a {
 }
 
 img.c1, img {
-    box-shadow: 10px 10px 18px 15px var(--bg-blonde), -10px -10px 18px 15px var(--bg-blonde);
+    box-shadow: 10px 10px 18px 15px var(--bg-blond), -10px -10px 18px 15px var(--bg-blond);
     filter: opacity(80%);
 }
