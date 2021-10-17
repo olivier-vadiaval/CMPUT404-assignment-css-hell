@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ugly Homepage</title>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="author" content="Olivier Vadiavaloo">
+        <meta name="description" content="Homepage about me with ugly css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+            html {
+                background: radial-gradient(#444, #000);
+                font-family: cursive;
+            }
+            header {
+                text-align: center;
+            }
+            header h1 {
+                width: 100%;
+                font-size: 5em;
+                color: cyan;
+                text-shadow: 5px 5px 2px violet;
+            }
+            .footer-header {
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+                height: 4em;
+                background-color: red;
+            }
+            .container {
+                margin: 0 15%;
+                text-align: center;
+            }
+            .container h1, h2, h3, h4, h5, h6 {
+                margin: 0;
+            }
+            .container h3 {
+                font-size: 2em;
+                color: yellow;
+            }
+            .about-me {
+                width: 75%;
+                margin: auto;
+            }
+            .about-me p {
+                color: salmon;
+                font-size: 1.5em;
+                font-weight: 600;
+            }
+            .prof-pic {
+                position: absolute;
+                z-index: -1;
+                top: 15%;
+                left: 10%;
+                width: 15em;
+                height: 18em;
+                margin: 1em;
+                background-color: pink;
+            }
+            .prof-pic img {
+                width: 100%;
+                height: 100%;
+                object-fit: fill;
+                filter: saturate(4);
+                transform: rotate(-10deg);
+            }
+            .some-history h4 {
+                color: cyan;
+                font-size: 2em;
+                margin: 0;
+            }
+            .past-exp {
+                list-style: none;
+            }
+            .emp-date {
+                color: red;
+                font-size: 2em;
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .job-descr {
+                margin: 1em;
+            }
+            .job-descr li {
+                line-height: 2em;
+                color: skyblue;
+                font-size: larger;
+                margin: auto;
+                width: 50%;
+            }
+            .job-descr li:nth-child(even) {
+                color: chartreuse;
+            }
+            .sidebar {
+                position: absolute;
+                right: 5%;
+                top: 20em;
+                width: 15%;
+                background: springgreen;
+                box-shadow: 1px 1px 20px 20px green;
+            }            
+            .important-points {
+                list-style: none;
+                padding-right: 1em;
+            }
+            .important-points h4 {
+                font-weight: 600;
+                font-size: 1.5em;
+                color: violet;
+            }
+            .important-points p {
+                font-weight: bolder;
+                font-size: 1em;
+                color: coral;
+            }
+            .prospective-emp {
+                font-weight: bolder;
+                font-size: 1.5em;
+                color: crimson;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div></div>
+            <h1>Hi, I'm Olivier</h1>
+            <div class="footer-header"></div>
+        </header>
+        <div class="container">
+            <section class="about-me">
+                <h3>About me</h3>
+                <p>
+                    I'm a senior at the <a href="https://www.ualberta.ca/">University of Alberta</a>, pursing 
+                    a BSc in Computing Science. I'm interested in web development, computer graphics and program 
+                    synthesis. I also love tinkering with new tools and technologies that help solve daily-life 
+                    problems - or that simply look cool!
+                </p>
+                <p>
+                    When I'm not coding in my favorite language, python, I'm usually playing soccer or writing some 
+                    articles for a <a href="https://boablogs.wordpress.com/">blog</a> that I started in 2019 with
+                    some friends.
+                </p>
+            </section>
+            <section class="some-history">
+                <div class="prof-pic">
+                    <img src="./prof-pic.JPG" alt="Professional Picture of Olivier">
+                </div>
+                <div class="experience">
+                    <h3>Professional History</h3>
+                    <ul class="past-exp">
+                        <li class="research-job">
+                            <h4>Research Intern</h4>
+                            <div class="emp-date">
+                                <h5>University of Alberta</h5>
+                                <h5>Summer 2021</h5>
+                            </div>
+                            <ul class="job-descr">
+                                <li>
+                                    Developed three games-related benchmark problems for program synthesis.
+                                </li>
+                                <li>
+                                    Implemented simulated annealing with triage to synthesize programmatic strategies 
+                                    for three arcade-type games.
+                                </li>
+                                <li>
+                                    Improved the strength of synthesized strategies by performing bayesian optimization during 
+                                    the synthesis process.
+                                </li>
+                                <li>
+                                    Conducted experiments on the Beluga cluster to investigate the importance of triage and bayesian optimization 
+                                    during program synthesis.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="front-job">
+                            <h4>Front-end Developer Intern</h4>
+                            <div class="emp-date">
+                                <h5>FAANG</h5>
+                                <h5>Summer 2020</h5>
+                            </div>
+                            <ul class="job-descr">
+                                <li>
+                                    Worked within a scrum team on the front-end part of a new streaming website for young content creators.
+                                </li>
+                                <li>
+                                    Utilized bootstrap, react and redux to implement a responsive and pleasing user interface.
+                                </li>
+                                <li>
+                                    Responded to customer needs through close collaboration and implementing agile practices.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="prospective-emp">
+                <h3>To Prospective Employers</h3>
+                <p>
+                    I can collaborate closely with your designers and developers to deliver an incredible user experience to your 
+                    customers. I can communicate my thought process and give constructive feedback to improve the development 
+                    process and build better software. I can quickly learn new tools and technologies to better the quality of 
+                    your products. I can thrive under pressure and meet tight deadlines. I love opportunities that require me to 
+                    be creative and innovate.
+                </p>
+            </section>
+            <div class="sidebar">
+                <h3>Important Points</h3>
+                <ul class="important-points">
+                    <li>
+                        <h4>Currently looking for</h4>
+                        <p>
+                            Junior Developer Position
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Contact</h4>
+                        <p>
+                            vadiaval@ualberta.ca
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Location</h4>
+                        <p>
+                            Currently in Edmonton, but willing 
+                            to relocate
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Tools & Technologies</h4>
+                        <p>
+                            python, django, javascript, react, html, css, redux
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Spoken Languages</h4>
+                        <p>
+                            English & French (full working proficiency)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

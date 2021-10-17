@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Good Homepage</title>
+        <meta charset="UTF-8">
+        <meta lang="en">
+        <meta name="author" content="Olivier Vadiavaloo">
+        <meta name="description" content="Homepage about me with good css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <style>
+            html {
+                font-family: Georgia, 'Times New Roman', Times, serif;
+            }
+            header {
+                display: flex;
+                flex-direction: column;
+                margin: 0 15%;
+                color: white;
+                text-align: center;
+                height: 25em;
+                background: radial-gradient(cyan, darkcyan, #005881);
+            }
+            header div {
+                height: 15%;
+                background-color: #7d5134;
+            }
+            .footer-header {
+                background: linear-gradient(#444, #000);
+            }
+            header h1 {
+                justify-content: center;
+                margin-top: auto;
+                margin-bottom: auto;
+                font-size: 5em;
+                text-shadow: 2px 2px 5px darkblue;
+            }
+            .container {
+                margin: 0 15%;
+                padding: 2% 0;
+                border-left: 1px solid #000;
+                border-right: 1px solid #000;
+            }
+            .container section {
+                margin: 2%;
+            }
+            .container h3 {
+                font-size: xx-large;
+                font-weight: lighter;
+                margin: 0.5em 0;
+            }
+            .container p {
+                line-height: 2em;
+                padding-left: 0.5em;
+            }
+            .about-me {
+                width: 75%;
+                height: 20%;
+            }
+            .some-history {
+                display: flex;
+                flex-direction: row-reverse;
+                width: 70%;
+            }
+            div.prof-pic {
+                display: flex;
+                justify-content: center;
+                margin-left: 5em;
+                margin-top: 0em;
+                width: 18em;
+                height: 22.5em;
+                background-color: white;
+                box-shadow: 10px 10px 10px 10px lightgray;
+            }
+            .some-history img {
+                width: 15em;
+                height: 20em;
+                margin: 1em;
+                border: 2px solid #ddd;
+                object-fit: fill;
+                filter: grayscale(100%);
+            }
+            .past-exp {
+                list-style: none;
+                padding-left: 0;
+            }
+            .emp-date {
+                display: flex;
+                justify-content: space-between;
+                margin: 1em;
+                padding: 0 1em;
+                font-size: larger;
+                color: #555;
+            }
+            .emp-date * {
+                margin: 0;
+            }
+            .past-exp li {
+                margin-top: 1em;
+            }
+            .past-exp li h4 {
+                font-size: large;
+                font-weight: bold;
+                margin: 0.5em;
+                padding-bottom: 0.2em;
+                border-bottom: 1px solid #555;
+            }
+            .job-descr li {
+                margin: 0.5em 0;               
+            }
+            .sidebar {
+                position: absolute;
+                right: 16%;
+                top: 26em;
+                width: 12%;
+                padding-right: 2em;
+                background-color: #e8e8e8;
+                text-align: center;
+            }
+            .sidebar h3 {
+                padding-left: 1em;
+            }
+            .sidebar h4 {
+                font-size: large;
+                font-weight: 700;
+                color: darkcyan;
+            }
+            .important-points {
+                list-style: none;
+            }
+            .important-points li p {
+                line-height: 1em;
+            }
+            .prospective-emp p {
+                width: 75%;
+                padding-left: 0.5em;
+                line-height: 1.5em;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div></div>
+            <h1>Hi, I'm Olivier</h1>
+            <div class="footer-header"></div>
+        </header>
+        <div class="container">
+            <section class="about-me">
+                <h3>About me</h3>
+                <p>
+                    I'm a senior at the <a href="https://www.ualberta.ca/">University of Alberta</a>, pursing 
+                    a BSc in Computing Science. I'm interested in web development, computer graphics and program 
+                    synthesis. I also love tinkering with new tools and technologies that help solve daily-life 
+                    problems - or that simply look cool!
+                </p>
+                <p>
+                    When I'm not coding in my favorite language, python, I'm usually playing soccer or writing some 
+                    articles for a <a href="https://boablogs.wordpress.com/">blog</a> that I started in 2019 with
+                    some friends.
+                </p>
+            </section>
+            <section class="some-history">
+                <div class="prof-pic">
+                    <img src="./prof-pic.JPG" alt="Professional Picture of Olivier">
+                </div>
+                <div class="experience">
+                    <h3>Professional History</h3>
+                    <ul class="past-exp">
+                        <li class="research-job">
+                            <h4>Research Intern</h4>
+                            <div class="emp-date">
+                                <h5>University of Alberta</h5>
+                                <h5>Summer 2021</h5>
+                            </div>
+                            <ul class="job-descr">
+                                <li>
+                                    Developed three games-related benchmark problems for program synthesis.
+                                </li>
+                                <li>
+                                    Implemented simulated annealing with triage to synthesize programmatic strategies 
+                                    for three arcade-type games.
+                                </li>
+                                <li>
+                                    Improved the strength of synthesized strategies by performing bayesian optimization during 
+                                    the synthesis process.
+                                </li>
+                                <li>
+                                    Conducted experiments on the Beluga cluster to investigate the importance of triage and bayesian optimization 
+                                    during program synthesis.
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="front-job">
+                            <h4>Front-end Developer Intern</h4>
+                            <div class="emp-date">
+                                <h5>FAANG</h5>
+                                <h5>Summer 2020</h5>
+                            </div>
+                            <ul class="job-descr">
+                                <li>
+                                    Worked within a scrum team on the front-end part of a new streaming website for young content creators.
+                                </li>
+                                <li>
+                                    Utilized bootstrap, react and redux to implement a responsive and pleasing user interface.
+                                </li>
+                                <li>
+                                    Responded to customer needs through close collaboration and implementing agile practices.
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="prospective-emp">
+                <h3>To Prospective Employers</h3>
+                <p>
+                    I can collaborate closely with your designers and developers to deliver an incredible user experience to your 
+                    customers. I can communicate my thought process and give constructive feedback to improve the development 
+                    process and build better software. I can quickly learn new tools and technologies to better the quality of 
+                    your products. I can thrive under pressure and meet tight deadlines. I love opportunities that require me to 
+                    be creative and innovate.
+                </p>
+            </section>
+            <div class="sidebar">
+                <h3>Important Points</h3>
+                <ul class="important-points">
+                    <li>
+                        <h4>Currently looking for</h4>
+                        <p>
+                            Junior Developer Position
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Contact</h4>
+                        <p>
+                            vadiaval@ualberta.ca
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Location</h4>
+                        <p>
+                            Currently in Edmonton, but willing 
+                            to relocate
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Tools & Technologies</h4>
+                        <p>
+                            python, django, javascript, react, html, css, redux
+                        </p>
+                    </li>
+                    <li>
+                        <h4>Spoken Languages</h4>
+                        <p>
+                            English & French (full working proficiency)
+                        </p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
