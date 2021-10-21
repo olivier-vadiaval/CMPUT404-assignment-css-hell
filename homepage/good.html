@@ -9,24 +9,47 @@
         <meta name="description" content="Homepage about me with good css">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
         <style>
-            html {
+            body {
                 font-family: Georgia, 'Times New Roman', Times, serif;
             }
             header {
                 display: flex;
                 flex-direction: column;
-                margin: 0 15%;
                 color: white;
                 text-align: center;
                 height: 25em;
+                width: 100%;
                 background: radial-gradient(cyan, darkcyan, #005881);
             }
             header div {
                 height: 15%;
                 background-color: #7d5134;
             }
-            .footer-header {
+            .nav-bar {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
                 background: linear-gradient(#444, #000);
+                height: 15%;
+            }
+            .nav-bar a {
+                color: white;
+                text-decoration: none;
+                margin-top: 1em;
+                margin-bottom: 1em;
+                padding-right: 8em;
+                padding-left: 8em;
+                border-right: 1px solid lightgray;
+                border-left: 1px solid lightgray;
+            }
+            .nav-bar a:last-child {
+                border-right: none;
+            }
+            .nav-bar a:first-child {
+                border-left: none;
+            }
+            .nav-bar a:hover {
+                opacity: 0.5;
             }
             header h1 {
                 justify-content: center;
@@ -36,18 +59,18 @@
                 text-shadow: 2px 2px 5px darkblue;
             }
             .container {
-                margin: 0 15%;
-                padding: 2% 0;
-                border-left: 1px solid #000;
-                border-right: 1px solid #000;
+                padding-bottom: 2%;
+                width: 100%;
+                font-size: x-large;
             }
             .container section {
-                margin: 2%;
+                margin: 0 2%;
+                padding-top: 2%;
             }
             .container h3 {
                 font-size: xx-large;
                 font-weight: lighter;
-                margin: 0.5em 0;
+                margin: 0;
             }
             .container p {
                 line-height: 2em;
@@ -66,7 +89,7 @@
                 display: flex;
                 justify-content: center;
                 margin-left: 5em;
-                margin-top: 0em;
+                margin-top: 3em;
                 width: 18em;
                 height: 22.5em;
                 background-color: white;
@@ -110,23 +133,19 @@
             }
             .sidebar {
                 position: absolute;
-                right: 16%;
-                top: 26em;
-                width: 12%;
-                padding-right: 2em;
+                top: 20em;
+                right: 1em;
+                width: 18%;
                 background-color: #e8e8e8;
                 text-align: center;
-            }
-            .sidebar h3 {
-                padding-left: 1em;
+                padding: 1em;
             }
             .sidebar h4 {
-                font-size: large;
-                font-weight: 700;
                 color: darkcyan;
             }
             .important-points {
                 list-style: none;
+                padding-left: 0;
             }
             .important-points li p {
                 line-height: 1em;
@@ -142,10 +161,15 @@
         <header>
             <div></div>
             <h1>Hi, I'm Olivier</h1>
-            <div class="footer-header"></div>
+            <nav class="nav-bar">
+                <a href="#about-me">About me</a>
+                <a href="#some-history">Experience</a>
+                <a href="#prospective-employers">Why hire me?</a>
+                <a href="#important-point">Key Things</a>
+            </nav>
         </header>
         <div class="container">
-            <section class="about-me">
+            <section class="about-me" id="#about-me">
                 <h3>About me</h3>
                 <p>
                     I'm a senior at the <a href="https://www.ualberta.ca/">University of Alberta</a>, pursing 
@@ -159,7 +183,7 @@
                     some friends.
                 </p>
             </section>
-            <section class="some-history">
+            <section class="some-history" id="some-history">
                 <div class="prof-pic">
                     <img src="./prof-pic.JPG" alt="Professional Picture of Olivier">
                 </div>
@@ -211,7 +235,7 @@
                     </ul>
                 </div>
             </section>
-            <section class="prospective-emp">
+            <section class="prospective-emp" id="prospective-emp">
                 <h3>To Prospective Employers</h3>
                 <p>
                     I can collaborate closely with your designers and developers to deliver an incredible user experience to your 
@@ -221,7 +245,7 @@
                     be creative and innovate.
                 </p>
             </section>
-            <div class="sidebar">
+            <div class="sidebar" id="important-points">
                 <h3>Important Points</h3>
                 <ul class="important-points">
                     <li>
